@@ -91,7 +91,10 @@ p {
 .project-desciption {
   padding: 120px 60px;
 }
-
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
