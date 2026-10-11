@@ -34,28 +34,7 @@ p {
   font-size: 16px;
   line-height: 30px;
 }
-nav ul {
-  padding: 0;
-  margin: 0;
-}
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  padding-inline-start: 40px;
-  unicode-bidi: isolate;
-}
-nav li {
-  display: inline;
-  list-style: none;
-  line-height: 42px;
-  margin-left: 15px;
-}
-li {
-  display: list-item;
-  unicode-bidi: isolate;
-}
+
 .hero {
   background: var(--secondary-color);
   text-align: center;
@@ -86,6 +65,12 @@ li {
 
 .content h2 {
   font-size: 18px;
+  font-family: var(--default-font-family);
+}
+.content h3 {
+  font-size: 24px;
+  line-height: 1.5;
+
   font-family: var(--default-font-family);
 }
 
@@ -122,6 +107,36 @@ li {
   height: auto;
   border-radius: 10px;
 }
+.logo {
+  max-height: 40px;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -131,17 +146,65 @@ li {
   h2 {
     font-size: 44px;
   }
+  h4 {
+    font-size: 26px;
+  }
+}
 
-  .hero {
-    padding: 80px 20px;
-  }
-  .content {
-    text-align: center;
-    padding: 0;
-  }
+.hero {
+  padding: 80px 20px;
+}
+.content {
+  text-align: center;
+  padding: 0;
+}
 
-  .project-desciption {
-    padding: 0;
-    text-align: center;
-  }
+.project-desciption {
+  padding: 0;
+  text-align: center;
+}
+
+footer {
+  margin: 60px 0;
+  display: block;
+  unicode-bidi: isolate;
+}
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+.fab,
+.far {
+  font-weight: 400;
+}
+.fab {
+  font-family: "Font Awesome 5 Brands";
+}
+.fa,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
 }
